@@ -1,0 +1,659 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5" />
+        <link rel="stylesheet" type="text/css" href="css/common.css" />
+        <title>LMN Mobile - search results</title>
+    </head>
+    <body>
+             
+    <div id="wrapper">
+      <div id="wrapper-content">
+
+<div id="share-product"> 
+  <!--div class="container-content"--> 
+ 
+    <div class="title">Partage par email de l'offre: <span id="shared-product-title"></span></div> 
+ 
+  <!--div class="entry"--> 
+    <form id="share-product-form" class="email-form validate" method="post" action="#"> 
+      <fieldset> 
+        <input type="hidden" id="shared-product-id" name="pid" value="" /> 
+        <input type="hidden" id="shared-product-name" name="pName" value="" /> 
+        <input type="hidden" id="usePrintCss" name="usePrintCss" value="true" /> 
+ 
+        <div class="row"> 
+          <input type="text" id="ipt_email_friend" name="toAddress" class="required email" placeholder="email du destinataire" /> 
+          <div class="error-msg">son adresse doit être remplie et valide</div> 
+        </div> 
+        <div class="row"> 
+          <input type="text" id="ipt_name" name="fromName" class="required civilname" placeholder="votre nom" /> 
+          <div class="error-msg">votre nom doit être rempli, et sans caractères spéciaux</div> 
+        </div> 
+        <div class="row"> 
+          <input type="text" id="ipt_email" name="fromAddress" class="required email" placeholder="votre email" /> 
+          <div class="error-msg">votre adresse doit être remplie et valide</div> 
+        </div> 
+        <div id="note-container"> 
+          <div id="share-product-loader">en cours</div> 
+          <div id="share-product-message"> 
+            <span id="message-content"></span> 
+            <a id="message-back-link" href="#">Retour</a> 
+          </div> 
+        </div> 
+        <div id="share-product-buttons" class="row"> 
+          <input id="cancel-share-product" type="reset" class="reset" value="annuler" /> 
+          <input type="submit" class="submit" value="ok" /> 
+        </div> 
+      </fieldset> 
+    </form> 
+  <!--/div--> 
+ 
+  <!--/div--> 
+</div>
+
+      <div id="wrapper-content">
+
+<header id="header">
+
+  <div class="section">
+
+    <div class="holder">
+
+      <div class="frame">
+
+        <a href="#" id="menu-btn" class="btn">menu</a>
+
+        <a href="#" id="back-btn" class="btn back"><span>retour</span></a>
+
+        <h1 class="logo"><a href="/voyage/index.html">lastminute.com</a></h1>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+
+        <ul id="menu" class="menu">
+
+          <li><a href="/voyage/favorites.html" class="opener ico1">Mes favoris</a></li>
+
+          <li><a href="/voyage/facebook.html" class="opener ico2">Aimer sur facebook</a></li>
+
+          <li><a href="/voyage/googleplus.html" class="opener ico3">+1 sur Google+</a></li>
+
+          <li><a href="/voyage/legal-notice.html" class="opener ico4">Informations l&eacute;gales</a></li>
+
+          <li><a href="/voyage/need-help.html" class="opener ico5">Besoin d'aide ?</a></li>
+
+          <li><a href="/voyage/clear-private-data.html" class="opener ico6">Effacer mes informations</a></li>
+
+        </ul>
+
+
+
+        <div id="main">
+
+
+
+<div class="results-container">
+
+  <div id="filter-form-container">
+
+    <span class="title-text">Trier les offres par :</span>
+
+    <ul id="orderControls" class="controls-btn checkbox-list">
+
+      <li><input type="checkbox" id="topSalesChx" value="Top des ventes" /><label for="topSalesChx">Top des ventes</label></li>
+
+      <li><input type="checkbox" id="priceChx" value="Prix croissants" checked/><label for="priceChx">Prix croissants</label></li>
+
+    </ul>
+
+    <span class="title-text">Options de recherche :</span>
+
+
+
+<form id="search-form" action="/voyage/search-results.html" method="get" class="search-form validate">
+
+  <fieldset>
+
+    <div class="note">Erreur de saisie d&eacute;tect&eacute;e. Veuillez corriger les champs indiqu&eacute;s en rouge.</div>
+
+    <ul>
+
+      <li style="display:none"></li>
+
+
+
+      <li>
+
+        <label for="slt-desti" class="ico1">Destination</label>
+
+        <select id="slt-desti" name="slt-desti" class="required">
+
+          <option value="*">peu m'importe</option>
+
+
+
+                <option value="espagne">1. espagne</option>
+
+                <option value="rep-dominicaine">2. république dominicaine</option>
+
+                <option value="tunisie">3. tunisie</option>
+
+                <option value="maurice-ile">4. maurice</option>
+
+                <option value="maroc">5. maroc</option>
+
+                <option value="turquie">6. turquie</option>
+
+                <option value="thailande">7. thaïlande</option>
+
+                <option value="egypte">8. egypte</option>
+
+                <option value="mexique">9. mexique</option>
+
+                <option value="cap-vert">10. cap vert</option>
+
+
+
+                    <option value="bresil">brésil</option>
+
+                    <option value="bresil.rio-de-janeiro">&nbsp;&nbsp;- rio de janeiro</option>
+
+                    <option value="canada">canada</option>
+
+                    <option value="canada.montreal">&nbsp;&nbsp;- montréal</option>
+
+                    <option value="canada.toronto">&nbsp;&nbsp;- toronto</option>
+
+                    <option value="canada.vancouver">&nbsp;&nbsp;- vancouver</option>
+
+                    <option value="cap-vert">cap vert</option>
+
+                    <option value="cap-vert.ile-de-sal">&nbsp;&nbsp;- ile de sal</option>
+
+                    <option value="chypre">chypre</option>
+
+                    <option value="chypre.larnaca">&nbsp;&nbsp;- larnaca</option>
+
+                    <option value="chypre.paphos">&nbsp;&nbsp;- paphos</option>
+
+                    <option value="croatie">croatie</option>
+
+                    <option value="egypte">egypte</option>
+
+                    <option value="egypte.hurghada">&nbsp;&nbsp;- hurghada</option>
+
+                    <option value="egypte.taba">&nbsp;&nbsp;- taba</option>
+
+                    <option value="egypte.louxor">&nbsp;&nbsp;- louxor</option>
+
+                    <option value="espagne">espagne</option>
+
+                    <option value="espagne.barcelone">&nbsp;&nbsp;- barcelone</option>
+
+                    <option value="espagne.andalousie">&nbsp;&nbsp;- andalousie</option>
+
+                    <option value="espagne.costa-brava">&nbsp;&nbsp;- costa brava</option>
+
+                    <option value="espagne.costa-del-sol">&nbsp;&nbsp;- costa del sol</option>
+
+                    <option value="etats-unis">etats-unis</option>
+
+                    <option value="etats-unis.new-york">&nbsp;&nbsp;- new york</option>
+
+                    <option value="etats-unis.las-vegas">&nbsp;&nbsp;- las vegas</option>
+
+                    <option value="etats-unis.boston">&nbsp;&nbsp;- boston</option>
+
+                    <option value="grece">grèce</option>
+
+                    <option value="grece.athenes">&nbsp;&nbsp;- athènes</option>
+
+                    <option value="grece.crete">&nbsp;&nbsp;- crête</option>
+
+                    <option value="grece.rhodes">&nbsp;&nbsp;- rhodes</option>
+
+                    <option value="grece.les-Cyclades">&nbsp;&nbsp;- les cyclades</option>
+
+                    <option value="guadeloupe">guadeloupe</option>
+
+                    <option value="indonesie">indonésie</option>
+
+                    <option value="indonesie.DPS">&nbsp;&nbsp;- bali</option>
+
+                    <option value="israel">israël</option>
+
+                    <option value="italie">italie</option>
+
+                    <option value="italie.rome">&nbsp;&nbsp;- rome</option>
+
+                    <option value="italie.naples">&nbsp;&nbsp;- naples</option>
+
+                    <option value="italie.sardaigne">&nbsp;&nbsp;- sardaigne</option>
+
+                    <option value="italie.sicile">&nbsp;&nbsp;- sicile</option>
+
+                    <option value="italie.venise">&nbsp;&nbsp;- venise</option>
+
+                    <option value="maldives">maldives</option>
+
+                    <option value="malte">malte</option>
+
+                    <option value="maroc">maroc</option>
+
+                    <option value="maroc.marrakech">&nbsp;&nbsp;- marrakech</option>
+
+                    <option value="maroc.agadir">&nbsp;&nbsp;- agadir</option>
+
+                    <option value="maroc.essaouira">&nbsp;&nbsp;- essaouira</option>
+
+                    <option value="martinique">martinique</option>
+
+                    <option value="maurice-ile">maurice (ile)</option>
+
+                    <option value="mexique">mexique</option>
+
+                    <option value="mexique.cancun">&nbsp;&nbsp;- cancun</option>
+
+                    <option value="mexique.playa-del-carmen">&nbsp;&nbsp;- playa del carmen</option>
+
+                    <option value="rep-dominicaine">république dominicaine</option>
+
+                    <option value="rep-dominicaine.la-romana">&nbsp;&nbsp;- la romana</option>
+
+                    <option value="rep-dominicaine.punta-cana">&nbsp;&nbsp;- punta cana</option>
+
+                    <option value="republique-tcheque">république tchèque</option>
+
+                    <option value="senegal">sénégal</option>
+
+                    <option value="thailande">thaïlande</option>
+
+                    <option value="thailande.bangkok">&nbsp;&nbsp;- bangkok</option>
+
+                    <option value="thailande.phuket">&nbsp;&nbsp;- phuket</option>
+
+                    <option value="thailande.koh-samui">&nbsp;&nbsp;- koh samui</option>
+
+                    <option value="tunisie">tunisie</option>
+
+                    <option value="tunisie.djerba">&nbsp;&nbsp;- djerba</option>
+
+                    <option value="tunisie.tunis">&nbsp;&nbsp;- tunis</option>
+
+                    <option value="tunisie.monastir">&nbsp;&nbsp;- monastir</option>
+
+                    <option value="tunisie.tozeur">&nbsp;&nbsp;- tozeur</option>
+
+                    <option value="turquie">turquie</option>
+
+                    <option value="turquie.istanbul">&nbsp;&nbsp;- istanbul</option>
+
+                    <option value="turquie.bodrum">&nbsp;&nbsp;- bodrum</option>
+
+                    <option value="turquie.izmir">&nbsp;&nbsp;- izmir</option>
+
+                    <option value="turquie.antalya">&nbsp;&nbsp;- antalya</option>
+
+                    <option value="baléares">baléares</option>
+
+                    <option value="baléares.palma-de-majorque">&nbsp;&nbsp;- palma de majorque</option>
+
+                    <option value="canaries">canaries</option>
+
+                    <option value="canaries.grande-canarie">&nbsp;&nbsp;- grande canarie</option>
+
+                    <option value="canaries.fuerteventura">&nbsp;&nbsp;- fuerteventura</option>
+
+                    <option value="canaries.lanzarote">&nbsp;&nbsp;- lanzarote</option>
+
+                    <option value="canaries.tenerife">&nbsp;&nbsp;- ténérife</option>
+
+                    <option value="portugal">portugal</option>
+
+                    <option value="france">france</option>
+
+                    <option value="tanzanie">tanzanie</option>
+
+                    <option value="vietnam">vietnam</option>
+
+        </select>
+
+      </li>
+
+
+
+      <li>
+
+        <label for="slt-ori" class="ico2">Ville de d&eacute;part</label>
+
+        <select id="slt-ori" name="slt-ori" class="required">
+
+                <option value="PAR" selected="selected">1. paris</option>
+
+                <option value="LYS" >2. lyon</option>
+
+                <option value="NTE" >3. nantes</option>
+
+                <option value="MRS" >4. marseille</option>
+
+                <option value="TLS" >5. toulouse</option>
+
+
+
+              <option value="QXB">aix en provence (fr)</option>
+
+              <option value="ANE">angers (fr)</option>
+
+              <option value="QXG">angers (gare sncf) (fr)</option>
+
+              <option value="AVN">avignon (fr)</option>
+
+              <option value="BSL">bâle (ch)</option>
+
+              <option value="BVA">beauvais - (aéroport de beauvais-tillé) (fr)</option>
+
+              <option value="BIQ">biarritz (fr)</option>
+
+              <option value="BOD">bordeaux (fr)</option>
+
+              <option value="BES">brest (fr)</option>
+
+              <option value="BRU">bruxelles (be)</option>
+
+              <option value="CCF">carcassonne (fr)</option>
+
+              <option value="XCR">chalons sur marne (fr)</option>
+
+              <option value="CHR">chateauroux (fr)</option>
+
+              <option value="CER">cherbourg (fr)</option>
+
+              <option value="CFE">clermont ferrand (fr)</option>
+
+              <option value="CMR">colmar (fr)</option>
+
+              <option value="DOL">deauville (fr)</option>
+
+              <option value="DIJ">dijon (fr)</option>
+
+              <option value="DLE">dole (fr)</option>
+
+              <option value="EPL">epinal (fr)</option>
+
+              <option value="XZI">gare lorraine tgv - metz nancy (fr)</option>
+
+              <option value="GVA">genève (ch)</option>
+
+              <option value="GNB">grenoble (fr)</option>
+
+              <option value="FKB">karlsruhe/baden baden (de)</option>
+
+              <option value="LRH">la rochelle (fr)</option>
+
+              <option value="LEH">le havre (fr)</option>
+
+              <option value="LME">le mans (fr)</option>
+
+              <option value="ZLN">le mans (gare sncf) (fr)</option>
+
+              <option value="LIL">lille (fr)</option>
+
+              <option value="XDB">lille - lille europe rail svc (fr)</option>
+
+              <option value="LIG">limoges (fr)</option>
+
+              <option value="LRT">lorient (fr)</option>
+
+              <option value="LDE">lourdes (fr)</option>
+
+              <option value="LYS">lyon (fr)</option>
+
+              <option value="MRS">marseille (fr)</option>
+
+              <option value="ETZ">metz / nancy (fr)</option>
+
+              <option value="MPL">montpellier (fr)</option>
+
+              <option value="MLH">mulhouse (fr)</option>
+
+              <option value="NTE">nantes (fr)</option>
+
+              <option value="NCE">nice (fr)</option>
+
+              <option value="PAR">paris (fr)</option>
+
+              <option value="PUF">pau (fr)</option>
+
+              <option value="PGF">perpignan (fr)</option>
+
+              <option value="XOP">poitier (gare sncf) (fr)</option>
+
+              <option value="PIS">poitiers (fr)</option>
+
+              <option value="RNS">rennes (fr)</option>
+
+              <option value="XXX">sans transport (xx)</option>
+
+              <option value="EBU">st etienne (fr)</option>
+
+              <option value="SXB">strasbourg (fr)</option>
+
+              <option value="TLN">toulon (fr)</option>
+
+              <option value="TLS">toulouse (fr)</option>
+
+              <option value="TUF">tours (fr)</option>
+
+              <option value="VAF">valence (fr)</option>
+
+        </select>
+
+      </li>
+
+
+
+      <li>
+
+        <label for="ipt-date" class="ico3">Date de d&eacute;part</label>
+
+        <span class="text"><input type="text" class="with-dp required date defaultInvalid" id="ipt-date" name="ipt-date" /></span>
+
+      </li>
+
+
+
+      <li>
+
+        <label for="slt-flex" class="ico5">Flexibilit&eacute;</label>
+
+        <select id="slt-flex" name="slt-flex" class="required">
+
+          <option value="0">0 jour</option>
+
+          <option value="2">+/- 2 jours</option>
+
+          <option value="7" selected>+/- 1 semaine</option>
+
+        </select>
+
+      </li>
+
+
+
+      <li>
+
+        <label for="slt-dur" class="ico4">Dur&eacute;e du s&eacute;jour</label>
+
+        <select id="slt-dur" name="slt-dur" class="required">
+
+          <option value="1,5">1 - 5 nuits</option>
+
+          <option value="6,9" selected>6 - 9 nuits</option>
+
+          <option value="10,16">10 - 16 nuits</option>
+
+        </select>
+
+      </li>
+
+    </ul>
+
+
+
+    <div class="row">
+
+      <input type="submit" class="submit" value="rechercher" />
+
+    </div>
+
+
+
+  </fieldset>
+
+</form>  </div>
+
+
+
+  <span id="filter-form-opener" class="result-text"><strong>Modifier votre recherche</strong></span>
+
+
+
+  <ul id="result-list" class="result-list" data="defaultDepDate=22/03/2013">
+
+
+
+    <li class="product-item" style="display: none;">
+
+      <div class="holder">
+
+        <div class="price-box">
+
+        </div>
+
+
+
+        <div class="text-box">
+
+          <h2><a href="#"></a></h2>
+
+          <h3><a href="#"></a></h3>
+
+          <div class="entry">
+
+            <div class="btns">
+
+              <a href="#" class="btn-add">add</a>
+
+              <a href="#" class="btn-email">email</a>
+
+            </div>
+
+            <img class="image" src="" height="137" width="127" />
+
+            <div class="text">
+
+              <div class="units"><p></p></div>
+
+              <p class="pension"></p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="slide">
+
+        <div class="action-box">
+
+          <ul>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </li>
+
+
+
+  </ul>
+
+
+
+  <div id="searchLoader">Chargement en cours...</div>
+
+
+
+  <div id="searchNoResults" class="info-section hidden">
+
+    <p>D&eacute;sol&eacute;, aucun produit n'a &eacute;t&eacute; trouv&eacute;.</p>
+
+    <p>Nous vous invitons &agrave; effectuer une nouvelle recherche en &eacute;largissant vos crit&egrave;res.</p>
+
+  </div>
+
+
+
+  <div id="searchError" class="info-section hidden">
+
+    <p>D&eacute;sol&eacute;, une erreur est survenue pendant le chargement de nouveaux r&eacute;sultats.</p>
+
+    <p>Veuillez v&eacute;rifier que votre connectivit&eacute; internet n'est pas limit&eacute;e.</p>
+
+  </div>
+
+
+
+</div>
+
+        </div>
+
+
+
+    <aside class="banner"> 
+      <div id="lastminuteSearchLauncher"> 
+        <img id="toLmnSearch" src="http://back-lastminute.recette.orchestra-platform.com/admin/TS/fckUserFiles/Content_Image/searchresults-lastminutesearch.jpg" alt="voir les offres derni&egrave;re minute" /> 
+      </div> 
+    </aside> 
+
+<footer id="footer">
+  <div class="top-row">
+    <a href="http://lastminutemobile.recette.orchestra-platform.com/voyage/sale-general-terms.html">CGV</a> |
+    <a href="http://lastminutemobile.recette.orchestra-platform.com/voyage/privacy-policy.html">Confidentialité</a> |
+    <a href="http://lastminutemobile.recette.orchestra-platform.com/voyage/cookies-policy.html">Cookies</a> |
+    <a href="http://lastminutemobile.recette.orchestra-platform.com/voyage/legal-notice.html">Informations légales</a>
+  </div>
+  <div class="bottom-row">
+    <a href="http://www.fr.lastminute.com/site/voyages/agence-de-voyage/">Accéder au site classique</a>
+  </div>
+</footer>        
+
+      </div>
+    </div>        
+        
+        <script type="text/javascript" src="cordova-2.3.0.js"></script>
+        <!-- script type="text/javascript" src="js/index.js"></script-->
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

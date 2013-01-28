@@ -1,0 +1,23 @@
+C:\Java\androidProjects\lastminutemobile\gen\com\thiagob\lastminutemobile\R.java \
+ : C:\Java\androidProjects\lastminutemobile\res\drawable\icon.png \
+C:\Java\androidProjects\lastminutemobile\res\drawable-hdpi\icon.png \
+C:\Java\androidProjects\lastminutemobile\res\drawable-hdpi\ic_launcher.png \
+C:\Java\androidProjects\lastminutemobile\res\drawable-ldpi\icon.png \
+C:\Java\androidProjects\lastminutemobile\res\drawable-ldpi\ic_launcher.png \
+C:\Java\androidProjects\lastminutemobile\res\drawable-mdpi\icon.png \
+C:\Java\androidProjects\lastminutemobile\res\drawable-mdpi\ic_launcher.png \
+C:\Java\androidProjects\lastminutemobile\res\drawable-xhdpi\icon.png \
+C:\Java\androidProjects\lastminutemobile\res\drawable-xhdpi\ic_launcher.png \
+C:\Java\androidProjects\lastminutemobile\res\layout\main.xml \
+C:\Java\androidProjects\lastminutemobile\res\values\strings.xml \
+C:\Java\androidProjects\lastminutemobile\res\xml\config.xml \
+C:\Java\androidProjects\lastminutemobile\bin\res\drawable\icon.png \
+C:\Java\androidProjects\lastminutemobile\bin\res\drawable-hdpi\icon.png \
+C:\Java\androidProjects\lastminutemobile\bin\res\drawable-hdpi\ic_launcher.png \
+C:\Java\androidProjects\lastminutemobile\bin\res\drawable-ldpi\icon.png \
+C:\Java\androidProjects\lastminutemobile\bin\res\drawable-ldpi\ic_launcher.png \
+C:\Java\androidProjects\lastminutemobile\bin\res\drawable-mdpi\icon.png \
+C:\Java\androidProjects\lastminutemobile\bin\res\drawable-mdpi\ic_launcher.png \
+C:\Java\androidProjects\lastminutemobile\bin\res\drawable-xhdpi\icon.png \
+C:\Java\androidProjects\lastminutemobile\bin\res\drawable-xhdpi\ic_launcher.png \
+C:\Java\androidProjects\lastminutemobile\bin\AndroidManifest.xml \
